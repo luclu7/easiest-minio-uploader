@@ -1,7 +1,7 @@
 # Just a lazy, simple minio uploader
 
 Usage:
-./easiest-minio-uploader <bucketname> <file you want to upload> <name of the remote file>
+`./easiest-minio-uploader <bucketname> <file you want to upload> <name of the remote file>`
 
 Env variables:
 * S3_HOST: address of you minio/s3 server
