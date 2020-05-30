@@ -34,8 +34,10 @@ func main() {
 		log.Printf("Successfully created %s\n", bucketName)
 	}
 
+	minioClient.SetBucketPolicy(bucketName, "download")
+
 	// Upload the zip file
-	objectName := os.Args[2]
+	objectName := os.Args[3]
 	filePath := os.Args[2]
 	contentType := "application/octet-stream"
 
